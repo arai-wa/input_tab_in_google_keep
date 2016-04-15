@@ -6,6 +6,6 @@ document.onkeydown = function (e) {
     if (e.keyCode === 9) {
         e.preventDefault();
         event.returnValue = false;
-        document.execCommand('insertHTML',false , '\t');
+        document.execCommand('insertText',false , '\t');
     }
 };
