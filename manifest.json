@@ -1,7 +1,7 @@
 {
    "manifest_version": 2,
    "name": "Input Tab in Google Keep",
-   "version": "1.0.1",
+   "version": "1.0.2",
    "description": "This is an extension for Google Keep. You can input tab(\t) into memos.",
    "icons": {
       "16": "icon_16.png",
@@ -10,7 +10,6 @@
    },
    "content_scripts": [ {
       "js": [ "scripts.js" ],
-      "matches": [ "https://keep.google.com/*" ],
-      "run_at": "document_end"
+      "matches": [ "*://keep.google.com/*" ]
    } ]
 }
